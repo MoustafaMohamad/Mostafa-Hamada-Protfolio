@@ -1,0 +1,714 @@
+
+*{
+margin: 0;
+padding: 0;
+
+color: #ffffff;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+:root {
+    --yellow: #ffbd39;
+    --gray: #4c4848;
+    --scond-gray :#808080;
+    --margin-top: 130px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* font-family: 'Roboto', sans-serif; */
+    margin-left: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #000000;
+}
+/* Start Header */
+.header {
+    padding: 20px;
+}
+.header .container a {
+    text-decoration: none;
+    color: aliceblue;
+}
+.container{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.nav ul li{
+display: inline-block;
+list-style: none;
+font-size: 18px;
+padding: 0 10px;
+cursor: pointer;
+position: relative;
+}
+.nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.icon {
+    padding-right: 250px;
+}
+.icon i {
+    font-size: 15px;
+    letter-spacing: 4px;
+
+    
+}
+.nav ul li:after{
+content: '';
+width: 0;
+height: 3px;
+background: var(--yellow);
+position: absolute;
+left: 15px;
+bottom: -10px;
+transition: 0.5s;
+}
+.nav ul li span::before {
+    content: '';
+    width: 80%;
+    background-color: var(--yellow);
+    position: absolute;
+    height: 2px;
+    bottom: -10px;
+    left: 7px;
+
+}
+.nav ul li span a{
+    color: var(--yellow);
+}
+.nav ul li:not(:first-child):hover::after {
+width:70%;
+} 
+.nav ul li a:hover {
+    color: var(--yellow);
+ 
+} 
+/* End Header */
+/* Start Land */
+.land {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.land .photo img {
+    width: 600px; 
+    height: 600px;
+    margin-left: 250px;
+    border-radius: 100px 50px 100px 50px;
+}
+.contain {
+   
+    margin-left: 100px;
+}
+.contain h5 {
+    color: var(--yellow);
+    font-size: 20px;
+} 
+.contain span {
+    color: #ffffff;
+}
+.contain #p1 {
+    color: var(--yellow);
+    font-size: 50px;
+}
+.contain #p2 {
+    font-size: 30px;
+}
+.b {
+    margin-top: 20px;
+}
+.contain .b .b1 {
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: var(--yellow);
+    color: #000000;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+
+}
+.contain .b .b2 {
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #4c4848;
+    color: #ffffff;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+
+}
+.land .photo img {
+    width: 500px;
+    object-fit: contain;
+    margin-right: 100px;
+}
+/* End Land */
+
+/* Start About me  */
+.about-me {
+    margin-top: var(--margin-top);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -300px;
+}
+.about-me .photo img {
+    width: 500px;
+    height: 500px;
+    margin-right: 100px;
+}
+/* In Section Resume Contain ............................. */
+/* In Section Resume Services ...............................*/
+/*  In Section My Skills ...............................*/
+/*  In Section our-projects ...............................*/
+/*  In Section our-blog ...............................*/
+.about-me .a-m h1,
+.resume .contain h1,
+.Services .contain h1,
+.my-skills .contain h1,
+.our-projects .contain h1,
+.our-blog .contain h1,
+.contact-me .contain h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    
+}
+
+/* In Section Resume Contain ............................. */
+/* In Section Resume Services ...............................*/
+/*  In Section My Skills ...............................*/
+/*  In Section our-projects ...............................*/
+/*  In Section our-blog ...............................*/
+.about-me .a-m h2,
+.resume .contain h2,
+.Services .contain h2,
+.my-skills .contain h2,
+.our-projects .contain h2,
+.our-blog .contain h2,
+.contact-me .contain h2 {
+    font-size: 80px;
+    /* font-weight: bold; */
+    opacity: 0.1;
+    margin-top: -40px;
+    letter-spacing: 10px;
+}
+/* In Section Resume Contain ............................. */
+/* In Section Resume Services ...............................*/
+/*  In Section My Skills ...............................*/
+/*  In Section our-projects ...............................*/
+/*  In Section our-blog ...............................*/
+.about-me .a-m #i-1,
+.resume .contain #i-1,
+.Services .contain #i-1,
+.my-skills .contain #i-1,
+.our-projects .contain #i-1,
+.our-blog .contain #i-1,
+.contact-me .contain #i-1 {
+    color: var(--scond-gray);
+    width: 700px;
+
+}
+.about-me .a-m .p {
+    margin-top: 20px;
+    font-size: 20px;
+    width: 70%;
+
+}
+.about-me .a-m span {
+    color: var(--scond-gray);
+    margin-left: 20px;
+}
+.about-me .c-v button{
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: var(--yellow);
+    color: #000000;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+/* End About me */
+/* Start Resume */
+.resume {
+    margin-top: var(--margin-top);
+}
+.resume .contain,
+.Services .contain,
+.my-skills .contain,
+.our-projects .contain,
+.our-blog .contain,
+.contact-me .contain {
+    margin-right: 300px;
+}
+/* In Section Resume Services ...............................*/
+/*  In Section My Skills ...............................*/
+/*  In Section our-projects ...............................*/
+/*  In Section our-blog ...............................*/
+.resume .contain h1,
+.Services .contain h1,
+.my-skills .contain h1,
+.our-projects .contain h1,
+.our-blog .contain h1,
+.contact-me .contain h1 {
+    margin-left: calc((100% - -5px) / 2);
+    letter-spacing: 2px;
+}
+
+.resume .contain h2 {
+    margin-left: calc((100% - 130px) / 2);
+    
+
+}
+/* In Section Resume Services ...............................*/
+/*  In Section My Skills ...............................*/
+/*  In Section our-projects ...............................*/
+/*  In Section our-blog ...............................*/
+
+.Services .contain h2,
+.my-skills .contain h2,
+.our-projects .contain h2,
+.our-blog .contain h2,
+.contact-me .contain h2 {
+    margin-left: calc((100% - 130px) / 2);
+    letter-spacing: 3px;
+}
+/* In Section Resume Services ...............................*/
+/*  In Section My Skills ...............................*/
+/*  In Section our-projects ...............................*/
+/*  In Section our-blog ...............................*/
+.resume .contain #i-1,
+.Services .contain #i-1,
+.my-skills .contain #i-1,
+.our-projects .contain #i-1,
+.our-blog .contain #i-1,
+.contact-me .contain #i-1 {
+    margin-left: calc((100% - 475px)/2);
+    width: 800px;
+}
+.resume .contain #i-1 span,
+.Services .contain #i-1 span {
+    padding-left: 150px;
+    color: var(--scond-gray);
+}
+.resume .cards {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 90px;
+ 
+}
+
+.resume .cards .card-1 {
+    width: 550px;
+    height: 350px;
+    background-color: #ffffff1a;
+    padding: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+.resume .cards .card-1 #i-1 {
+    color: var(--yellow);
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 20px;
+
+}
+.resume .cards .card-1 #i-2 {
+    font-size: 30px;
+    padding-bottom: 20px;
+
+}
+.resume .cards .card-1 #i-3 {
+    color: var(--scond-gray);
+    padding-bottom: 20px;
+
+}
+.resume .cards .card-1 #i-4 {
+    color: var(--scond-gray);
+    padding-bottom: 20px;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+}
+.resume .cards .c-v button {
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: var(--yellow);
+    color: #000000;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 20px;
+   
+}
+.resume .cards .c-v {
+    margin-top: 50px;
+    margin-left: calc((100% - 270px) /2);
+}
+
+
+/* End Resume*/
+/* Start Services */
+.Services {
+    margin-top: var(--margin-top);
+    
+}
+
+.Services .contain #i-1 {
+    margin-left: calc((100% - 450px) / 2);
+
+}
+.crads {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: calc((100% - 1300px) /4);
+   
+}
+.crads .card-1 {
+    background-color: #ffffff1a;
+    padding: 20px;
+    width: 350px;
+    height: 250px;
+    margin: 20px;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.3s ease;
+
+
+}
+.crads .card-1 img {
+    width: 70px;
+    height: 70px;
+}
+.crads .card-1 p {
+    padding-top: 30px;
+    position: relative;
+}
+.crads .card-1 p::after {
+    content: " ";
+    position: absolute;
+    width: 55px;
+    height: 1px;
+    background-color: var(--yellow);
+    top: 70px;
+    right: 30px;
+}
+
+.crads .card-1:hover {
+    background-color: var(--yellow);
+    cursor: pointer;
+
+        p::after {
+            background-color: #000000;
+            
+        }
+        p {
+            color: #000000;
+        }
+        transform: scale(1.1 , 1.1);
+        
+} 
+/* End Services */
+/* Start My Skills */
+.my-skills {
+    margin-right: 30px;
+}
+.my-skills .contain h2 {
+    margin-left: calc((100% - -15px) / 2);
+}
+.my-skills .contain #i-1 {
+    margin-left: calc((100% - 365px) / 2);
+}
+.progress {
+    width: 40%;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.my-skills .rate {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+}
+/* End My Skills */
+
+/* Start Our Projects */
+.our-projects {
+    margin-top: var(--margin-top);
+}
+.our-projects .contain h1 {
+    margin-left: calc((100% - 100px)/2);
+}
+.our-projects .contain #i-1 {
+    margin-left: calc((100% - 400px)/2);
+}
+.image {
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.our-projects #m-1 {
+    width: 400px;
+    height: 225px;
+    object-fit:fill;
+    margin-left: 60px;
+}
+.our-projects #m-2 {
+    width: 800px;
+    height: 225px;
+    object-fit: cover;
+    margin-left: 30px;
+}
+.our-projects #m-4 {
+    width: 400px;
+    height: 225px;
+    object-fit:fill;
+    margin-left: 30px;
+}
+.our-projects #m-3 {
+    width: 800px;
+    height: 225px;
+    object-fit: cover;
+    margin-left: 60px;
+}
+.our-projects #m-6 {
+    width: 400px;
+    height: 225px;
+    object-fit:fill;
+    margin-left: 30px;
+}
+.our-projects #m-5 {
+    width: 800px;
+    height: 225px;
+    object-fit: cover;
+    margin-left: 60px;
+}
+.our-projects #m-1,
+.our-projects #m-2,
+.our-projects #m-3,
+.our-projects #m-4,
+.our-projects #m-5,
+.our-projects #m-6 {
+    margin: 10px;
+}
+.scond-section .cards-rate div {
+    color: var(--yellow);
+}
+/* Change hover with javascript ....................... */
+/* End Our Projects */
+
+/* Start Our Blog */
+
+.our-blog .contain h2 {
+    margin-left: calc((100% - -40px) / 2);
+
+}
+.our-blog .contain #i-1 {
+    margin-left: calc((100% - 415px) / 2);
+
+}
+.our-blog .cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.our-blog .card-1 {
+
+    height: 400px;
+    width: 400px;
+}
+.our-blog .card-1 img {
+    width: 400px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+.our-blog .card-1 i {
+    color: var(--yellow);
+}
+.our-blog .card-1 #p-1 {
+    color: var(--yellow);
+    width: 400px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+.our-blog .card-1 #p-2 {
+    font-size: 22px;
+    font-weight: bold;
+    width: 400px;
+    margin-bottom: 10px;
+}
+.our-blog .card-1 #p-3 {
+    font-size: 17px;
+    width: 400px;
+}
+.scond-section {
+    margin-top: 450px;
+}
+.cards-rate {
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+
+}
+.cards-rate div{
+    width: 230px;
+    height: 130px;
+    padding: 20px;
+    background-color: #ffffff1a;
+    border-radius: 10px;
+    position: relative;
+    top: 80px;
+    z-index: 2;
+}
+.our-blog .scond-section .contain  {
+    background-image: url(/Image/medium-shot-man-wearing-vr-glasses.jpg);
+    width: 100%;
+    height: 350px;
+    margin-left: 0;
+    padding-top: 100px;
+    position: absolute;
+    z-index: 1;
+    margin-bottom: 50px;
+}
+.scond-section .contain h1 {
+    width: 100%;
+    margin-left: calc((100% - 600px) /2);
+    font-weight: bold;
+
+}
+.scond-section .contain h1 span {
+    color: var(--yellow);
+}
+.scond-section .contain p {
+    margin-left: calc((100% - 550px) /2);
+    width: 600px;
+    text-align: center;
+    margin-top: 20px;
+}
+.scond-section .contain button {
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: var(--yellow);
+    color: #000000;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-left: calc((100% - 80px) /2);
+}
+/* End Our Blog */
+
+/* Start Contact Me */
+.contact-me .contain {
+    margin-top: 400px;
+}
+.contact-me .contain h1 {
+    margin-left: calc((100% - 20px) / 2);
+}
+.contact-me .contain h2 {
+    margin-left: calc((100% - 40px) / 2);
+}
+.contact-me .contain p {
+    text-align: center;
+}
+.contact-me {
+    margin-bottom: 50px;
+}
+.contact-me .s-m  {
+    margin-top: var(--margin-top);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: calc((100% - 1300px) / 4);
+}
+.contact-me .s-m .card i{
+font-size: 40px;
+
+}
+.contact-me .s-m .card div {
+    background-color: #ffffff1a;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+}
+.contact-me .s-m .card {
+    text-align: center;
+}
+.contact-me .s-m .card h4 {
+    margin-bottom: 10px;
+
+}
+.contact-me .s-m .card p {
+    width: 250px;
+
+}
+/* End Contact Me */
+
+/* Satrt Footer */
+ .footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.footer .links, 
+.footer .Services {
+    margin-top: 130px;
+    line-height: 50px;
+ 
+}
+.footer .ask {
+    margin-top: 30px;
+    line-height: 50px;
+}
+.footer .links li, 
+.footer .Services li,
+.footer .links li a, 
+.footer .Services li a,
+.footer .ask li,
+.footer .ask li a,
+.footer .ask li span,
+.footer .row p a {
+    color: var(--yellow);
+
+}
+.row p {
+    margin-left: calc((100% - 1200px) / 3);
+    margin-bottom: 50px;
+}
+
+/* End Footer */
